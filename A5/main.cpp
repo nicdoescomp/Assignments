@@ -26,11 +26,11 @@ int main() {
     
     int ans;
     int count;
-    string filename = "/Users/nic/Documents/A4/A4/inventory_1.txt";
+    string filename = "//your file here//";
 
     
     cout << "Opening file...\n";
-    MyWriteFile.open("/Users/nic/Documents/A4/A4/inventory_1.txt", ios::out);
+    MyWriteFile.open("//your file here//", ios::out);
     
     if (!MyWriteFile) {
         cerr << "Error opening file!\n";
@@ -72,7 +72,7 @@ int main() {
 
     string myText;
     
-    ifstream MyReadFile("/Users/nic/Documents/A4/A4/inventory_1.txt");
+    ifstream MyReadFile("//your file here//");
     
     while (getline (MyReadFile, myText)) {
         cout << myText << endl;
